@@ -11,3 +11,15 @@
 #     6
 #     -> 5
 
+N = int(input("Размер массива: ")) 
+print("Элементы массива:")
+A = [int(input()) for i in range(N)] 
+X = int(input("Число x: ")) 
+min = abs(X - A[0])
+index = 0
+for i in range(N):
+        count = abs(X - A[i])
+        if count < min:
+            min = count
+            index = i
+print(f'Число {A[index]} близкое по величине к числу {X}')
