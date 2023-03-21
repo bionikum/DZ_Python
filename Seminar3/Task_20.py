@@ -14,3 +14,23 @@
 
 # ноутбук
 #     12
+
+
+
+dictionary = {1 : "AEIOULNSTRАВЕИНОРСТ",
+              2 : "DGДКЛМПУ", 
+              3 : "BCMPБГЁЬЯ",
+              4 : "FHVWYЙЫ",
+              5 : "KЖЗХЦЧ", 
+              8 : "JXШЭЮ",
+              10 : "QZФЩЪ"}
+
+word = input("Введите слово: ").upper()
+s = 0
+for i in word:
+    for k, v in dictionary.items():
+        if i in v:
+            s += k
+print(f"Стоимость слова: {s}")
+
+
