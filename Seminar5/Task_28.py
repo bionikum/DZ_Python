@@ -12,9 +12,11 @@
 def sum(a, b):
     if b == 0:
         return a
-    return (a + 1) + (b - 1)
+    return 1 + sum(a, b - 1)
 
 
 a = int(input("Введите неотрицательное число a: "))
 b = int(input("Введите неотрицательное число b: "))
 print(sum(a, b))
+
+
